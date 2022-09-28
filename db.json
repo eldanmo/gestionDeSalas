@@ -1,0 +1,17 @@
+{
+  "salas": [
+    {
+      "nombreSala": "509",
+      "reservanteSala": "Danie Mora",
+      "estadoSala": "Ocupada",
+      "horarioSala": "2022-09-28T09:50",
+      "notasSala": "Conexión con personal virtual",
+      "id": 19
+    },
+    {
+      "nombreSala": "408",
+      "estadoSala": "Desocupada",
+      "id": 20
+    }
+  ]
+}
