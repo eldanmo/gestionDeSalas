@@ -8,7 +8,7 @@ const Formulario = () => {
 
     const handleSubmit = async (valores) => {
         try {
-            const url = 'http://localhost:4000/salas'
+            const url = import.meta.env.VITE_API_URL
             const respuesta = await fetch (url, {
                 method: 'POST',
                 body: JSON.stringify(valores),
@@ -16,7 +16,7 @@ const Formulario = () => {
                     'Content-Type': 'application/json'
                 }
             })
-            const resultado = await respuesta.json()
+            await respuesta.json()
             navigate('/')
         } catch (error) {
             console.log(error)

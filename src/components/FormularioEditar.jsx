@@ -10,7 +10,7 @@ const FormularioEditar = ({sala, cargando}) => {
     const handleSubmit = async (valores) => {
         try {
             console.log(valores)
-            const url = `http://localhost:4000/salas/${sala.id}`
+            const url = `${import.meta.env.VITE_API_URL}${sala.id}`
             const respuesta = await fetch (url, {
                 method: 'PUT',
                 body: JSON.stringify(valores),

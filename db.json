@@ -12,6 +12,14 @@
       "nombreSala": "408",
       "estadoSala": "Desocupada",
       "id": 20
+    },
+    {
+      "nombreSala": "308",
+      "reservanteSala": "",
+      "estadoSala": "Desocupada",
+      "horarioSala": "",
+      "notasSala": "",
+      "id": 21
     }
   ]
 }

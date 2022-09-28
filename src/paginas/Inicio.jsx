@@ -12,7 +12,7 @@ const Inicio = () => {
   useEffect(()=>{
     const obtenerSalasAPI = async ()=> {
       try {
-        const url = 'http://localhost:4000/salas'
+        const url = import.meta.env.VITE_API_URL
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
 
@@ -29,7 +29,7 @@ const Inicio = () => {
 
       if(confirmarEliminacion) {
         try {
-          const url = `http://localhost:4000/salas/${id}`
+          const url = `${import.meta.env.VITE_API_URL}/${id}`
           const respuesta = await fetch(url, {
             method:'DELETE'
           })
@@ -47,7 +47,7 @@ const Inicio = () => {
 
       if(liberacion){
         try {
-          const url = `http://localhost:4000/salas/${id}`
+          const url = `${import.meta.env.VITE_API_URL}/${id}`
           const respuesta = await fetch (url, {
               method: 'PUT',
               body: JSON.stringify(valores),
